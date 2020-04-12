@@ -115,6 +115,8 @@ public class Gui extends JFrame {
         num2Lab.setText("");
         depthLab.setText("");
 
+
+        drawShape.removeActionListener(this);
         drawShape.addActionListener(this);
         if(e.getSource() == drawShape){
 
@@ -148,6 +150,7 @@ public class Gui extends JFrame {
             num2Lab.setText("Height:");
             depthLab.setText("");
 
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
             if(e.getSource()==drawShape){
                 Triangle tri = new Triangle();
@@ -177,6 +180,7 @@ public class Gui extends JFrame {
             num2Lab.setText("");
             depthLab.setText("");
 
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
             if(e.getSource()==drawShape){
                 Square sq = new Square();
@@ -204,8 +208,11 @@ public class Gui extends JFrame {
             num2Lab.setText("Height:");
             depthLab.setText("");
 
+
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
             if(e.getSource()==drawShape){
+
 
                 Rectangle rect = new Rectangle();
 
@@ -233,7 +240,7 @@ public class Gui extends JFrame {
             num2Lab.setText("");
             depthLab.setText("");
 
-
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
             if(e.getSource()==drawShape){
                // SphereClass sphere = new SphereClass();
@@ -254,6 +261,7 @@ public class Gui extends JFrame {
             num2Lab.setText("Radius:");
             depthLab.setText("");
 
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
             //if(e.getSource()==drawShape && cylinder.isSelected()){
 
@@ -283,6 +291,7 @@ public class Gui extends JFrame {
             num2Lab.setText("Height:");
             depthLab.setText("Depth:");
 
+            drawShape.removeActionListener(this);
             drawShape.addActionListener(this);
 
             if(e.getSource()==drawShape){
